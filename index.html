@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container-body" >
+<div card-container>
+  <div class="backgroundpurplemobile" >
+    <img  src="images/bg-main-mobile.png" alt="" >
+  </div>
+  <div class="backgroundpurpledesktop" >
+    <img  src="images/bg-main-desktop.png" alt="" >
+  </div>
+ 
+  <div class="cont2">
+    <img  src="images/bg-card-back.png" alt="back of card" >
+    <div class="centered2">000</div>
+  </div>
+  
+  <div class="cont1">
+    <img  src="images/bg-card-front.png" alt="front of card"  >
+    <div class="bottom-left1"> JANE APPLESEED </div>
+    <div class="top-left1"> <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+  </div>
+    <div class="bottom-right1"><span class="default-month-input">00</span>/ <span class="default-year-input">00</span>  </div>
+    <div class="centered1">0000 0000 0000 0000</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+<form action=""  name="myForm" id="myform" method="post">
+  
+  <div class="inputBox">
+    <span> CARDHOLDER NAME </span> 
+    <input type="text" name="" class="card-holder-input" value="" placeholder=" e.g. Jane Appleseed " required autofocus autocapitalize="">
+  </div> 
+  <p id="errorMsg"></p>
+
+  <div class="inputBox">
+    <span> CARDHOLDER NUMBER </span> 
+ <input type="text" class="card-number-input" placeholder=" e.g. 1234 5678 9123 0000 " maxlength="19" required>
+  </div>
+  <p id="card-num-error"></p>
+
+
+ <!-- <label for="cardholder name"> CARDHOLDER NAME </label> <br> -->
+
+
+ <!-- <label for=" Card Number"> CARD NUMBER </label> <br> -->
+
+
+<div class="flexBox">
+<div class="inputBox" >
+  <span> EXP. DATE (MM/YY) </span>
+ <!-- <label for=" expiry date">  EXP. DATE (MM/YY) </label> <br> -->
+ <div class="inputBox1">
+ <select name="" id="expiry" class="month-input" required>
+<option value="month" selected disabled> MM </option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<!-- </div> -->
+<!-- <div class="inputBox"> -->
+<select name="" id="expiry" class="year-input" required>
+  <option value="year" selected disabled> YY </option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">21</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  </select>
+  <p id="expiry-error"></p>
+</div>
+</div>
+<div class="inputBox">
+  <span> CVC </span> 
+<!-- <label for=" CVC">  CVC </label> <br> -->
+
+<input type="text" placeholder="  e.g. 123 " maxlength="3" class="cvc-input" required >
+<p id="error-cvc" color= "red"; ></p>
+</div>
+</div>
+
+ <!-- <input id="inpt2" type="number" placeholder=" MM" size="2" required>
+<input id="inpt2" type="number" placeholder=" YY" pattern="2" required>  -->
+
+<div class="inputBox">
+ <button type="submit" id="submit" class="submit-btn"> Confirm </button>
+</div>
+ 
+</form>
+
+
+
+  <!-- Completed state start -->
+<div class="confirmation hidden">
+<svg class="tick" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+  <h1 id="thank-you-header"> THANK YOU! </h1>
+  <p> We've added your card details. </p>
+ <br>
+<div>
+  <button id="continue"> Continue </button>
+</div>
+</div>
+  
+<br> <br>
+  
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#"> David Fadare </a>.
+</div>
+
+</div>
+
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>

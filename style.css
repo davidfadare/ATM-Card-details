@@ -1,0 +1,508 @@
+/* media queries */
+/* body {
+  width: 100%;
+} */
+@media  (max-width: 375px) {
+body {
+  /* display: grid;
+  grid-template-columns: auto; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* background-image: url('images/bg-main-mobile.png'); */
+  /* background-color: rgba(128, 128, 128, 0.582); */
+  background-repeat: no-repeat;
+  font-weight: 10;
+  /* font-size: 18px; */
+  color: hsl(0, 0%, 100%);
+  font-family: 'Poppins' sans-serif;
+}
+
+.card-container {
+    display: flex;
+}
+.backgroundpurpledesktop{
+  display: none;
+}
+ .backgroundpurplemobile{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+ .backgroundpurple img{
+   width: 100%;
+  }
+
+  .cont2 {
+    position: relative;
+    /* top: 0px; */
+    bottom: 210px;
+ left: 60px;
+    /* z-index: -1; */
+  }
+
+  .cont2 img{
+    width: 80%; 
+    height: 80%;
+    /* z-index: -1; */
+  }
+  .cont1 {
+   position: relative;
+    /* top: 0px; */
+    bottom: 285px;
+      left: 13px;
+   }  
+
+  .cont1 img{
+    width:80%; 
+    height:80%;
+   }  
+
+
+/* .container {
+  min-height: 100%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+  user-select: none;
+  -ms-grid-column-align: center;
+top: 60px;
+  bottom: 500px;
+} */
+
+.bottom-left1 {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  font-size: 0.7rem;
+}
+
+.top-left1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+
+.bottom-right1 {
+  position: absolute;
+  bottom: 12%;
+  right: 25%;
+  font-size: 0.7rem;
+}
+
+.centered1 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-size: 1.7rem;
+  
+  /* transform: translate(-50%, -50%); */
+}
+
+/* back of card */
+
+.centered2 {
+  position: absolute;
+  top: 43%;
+  left: 65%;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+  /* transform: translate(-50%, -50%); */
+}
+
+/* container section  */
+.container{
+  position: absolute;
+  top: 320px;
+  margin-left: 2px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+/* form */
+.container form {
+  padding: 20px;
+  margin-bottom: 20px;
+  /* border-radius: 100px; */
+  justify-content: center;
+ 
+}
+
+#errorMsg, #card-num-error, #expiry-error, #error-cvc{
+  color: hsl(0, 100%, 66%);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hidden{
+  display: none;
+}
+
+.container form .inputBox{
+    margin-top: 5px;
+}
+
+.inputBox span{
+    display: block;
+    color: hsla(278, 68%, 11%, 0.801);
+    padding-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.inputBox input,
+ .inputBox select{
+    width: 90%;
+    padding: 10px;
+    /* padding-left: 1px; */
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: #444;
+}
+
+.flexBox{
+    display: flex;
+    gap: 5px;
+}
+
+
+ .flexBox .inputBox .inputBox1{
+   /* padding-left: 0px; */
+  /* width: 80%; */
+   display: flex;
+   gap: 5px;
+}
+
+
+
+
+
+button {
+  /* width: 90%; */
+  height: 45px;
+  width: 320px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: .2s linear;
+  font-size: 17px;
+}
+
+button:hover {
+  letter-spacing: 2px;
+  opacity: .8;
+}
+
+/* confirmation  */
+.confirmation {
+  /* display: none; */
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 20px;
+  color: black;
+}
+
+.tick {
+  justify-content: center;
+    align-items: center;
+    align-content: center;
+  margin-left: 122px;
+  padding-bottom: 20px;
+}
+  h1 {
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+  margin-left: 65px; 
+  font-weight: 100;
+} 
+
+p {
+  /* justify-content: space-between;
+  align-items: center;
+  align-content: center; */
+  margin-left: 20px; 
+  color: #444;
+  font-size: 1.5rem;
+
+}  
+
+.attribution{
+color: black;
+}
+
+ /* .correctInput {
+   display: none 
+}
+
+.backToggle {
+  display: none;
+}
+.active {
+  display: block;
+}  */
+}
+
+
+@media (min-width:375px) and (max-width: 1440px) {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* background-image: url('images/bg-main-mobile.png'); */
+  /* background-color: rgba(128, 128, 128, 0.582); */
+  background-repeat: no-repeat;
+  font-weight: 10;
+  /* font-size: 18px; */
+  color: hsl(0, 0%, 100%);
+  font-family: 'Poppins' sans-serif;
+}
+
+.card-container {
+    display: inline-block;
+}
+.backgroundpurplemobile{
+  display: none;
+}
+.backgroundpurpledesktop img{
+   width: 100%; 
+  height: 100%;
+ }
+ .backgroundpurpledesktop{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cont1 img{
+    width:80%; 
+    height:80%;
+   }  
+
+  .cont2 img{
+     width: 80%; 
+    height: 80%;
+    /* z-index: -1;  */
+  }
+  .cont1 {
+   position: absolute;
+    top: 150px;
+    /* bottom: 85px; */
+      left: 200px;
+   }  
+
+   .cont2 {
+    position: absolute;
+    /* top: 0px; */
+    bottom: 127px;
+ left: 300px;
+    /* z-index: -1; */
+  }
+
+  
+
+
+/* .container {
+  min-height: 100%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+  user-select: none;
+  -ms-grid-column-align: center;
+top: 60px;
+  bottom: 500px;
+} */
+
+.bottom-left1 {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  font-size: 0.7rem;
+}
+
+.top-left1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+
+.bottom-right1 {
+  position: absolute;
+  bottom: 12%;
+  right: 25%;
+  font-size: 0.7rem;
+}
+
+.centered1 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-size: 1.7rem;
+  
+  /* transform: translate(-50%, -50%); */
+}
+
+/* back of card */
+
+.centered2 {
+  position: absolute;
+  top: 43%;
+  left: 65%;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+  /* transform: translate(-50%, -50%); */
+}
+
+/* container section  */
+.container{
+  position: absolute;
+  top: 180px;
+  /* align-items: center; */
+   margin-left: 700px; 
+  /* width: 100%; */
+  /* padding-bottom: 10px; */
+}
+/* form */
+.container form {
+  padding: 20px;
+  margin-bottom: 20px;
+  /* border-radius: 100px; */
+  justify-content: center;
+ 
+}
+#errorMsg, #card-num-error, #expiry-error, #error-cvc{
+  color: hsl(0, 100%, 66%);
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.container form .inputBox{
+    margin-top: 5px;
+}
+
+.inputBox span{
+    display: block;
+    color: hsla(278, 68%, 11%, 0.801);
+    padding-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.inputBox input,
+ .inputBox select{
+    width: 90%;
+    padding: 10px;
+    /* padding-left: 1px; */
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: #444;
+}
+
+.flexBox{
+    display: flex;
+    gap: 5px;
+}
+
+
+ .flexBox .inputBox .inputBox1{
+   /* padding-left: 0px; */
+  /* width: 80%; */
+   display: flex;
+   gap: 5px;
+}
+
+
+
+
+
+button {
+  /* width: 90%; */
+  height: 45px;
+  width: 320px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: .2s linear;
+  font-size: 17px;
+}
+
+button:hover {
+  letter-spacing: 2px;
+  opacity: .8;
+}
+
+/* confirmation  */
+.confirmation {
+  /* display: none; */
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 20px;
+  color: black;
+}
+
+.tick {
+  justify-content: center;
+    align-items: center;
+    align-content: center;
+  margin-left: 122px;
+  padding-bottom: 20px;
+}
+  h1 {
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+  margin-left: 65px; 
+  font-weight: 100;
+} 
+
+p {
+  /* justify-content: space-between;
+  align-items: center;
+  align-content: center; */
+  margin-left: 23px; 
+  color: #444;
+  font-size: 1.5rem;
+
+}  
+
+.attribution{
+color: black;
+}
+
+ /* .correctInput {
+   display: none 
+}
+
+.backToggle {
+  display: none;
+}
+.active {
+  display: block;
+}  */
+}
